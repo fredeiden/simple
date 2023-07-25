@@ -1,0 +1,17 @@
+.view-image-grid h3 {
+    text-align: center;
+}
+.view-image-grid .views-view-responsive-grid__item {
+    text-align: center;
+}
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 80%;
+    margin: 0 auto 2em;
+}
+.image-with-caption img, .image-with-caption a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}

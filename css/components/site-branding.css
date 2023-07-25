@@ -1,0 +1,32 @@
+.site-branding {
+    font-family: Copperplate Gothic Light;
+}
+.site-branding ul {
+    list-style-type: none;
+    padding: 0;
+}
+.site-branding__items {
+    display: grid;
+    grid-template-columns: auto 300px auto;
+}
+.site-branding__logo-left {
+    text-align: right;
+}
+.site-branding__logo-right {
+}
+.site-branding__text {
+    text-align: center;
+}
+.site-branding .name {
+    font-size: 150%;
+    font-weight: lighter;
+    opacity: 60%;
+}
+.site-branding .event {
+    font-size: 250%;
+}
+@media (max-width: 480px) {
+    .site-branding__logo {
+	display: none;
+    }
+}

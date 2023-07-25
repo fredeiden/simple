@@ -1,0 +1,44 @@
+:root {
+  --font-sans: "metropolis", sans-serif;
+  --font-serif: "Lora", "georgia", serif;
+
+  /* Typography helpers. */
+  --font-size-base: 1rem;
+  --font-size-l: 1.125rem;
+  --font-size-s: 0.875rem;
+  --font-size-xs: 0.8125rem;
+  --font-size-xxs: 0.75rem;
+  --line-height-base: 1.6875rem;
+  --line-height-s: 1.125rem;
+
+  /**
+   * Gray colors.
+   *
+   * Color number roughly corresponds to its luminosity.
+   */
+  --color--gray-hue: 201;
+  --color--gray-saturation: 15%;
+  --color--gray-5: hsl(var(--color--gray-hue), var(--color--gray-saturation), 5%); /* Black */
+  --color--gray-10: hsl(var(--color--gray-hue), var(--color--gray-saturation), 11%);
+  --color--gray-20: hsl(var(--color--gray-hue), var(--color--gray-saturation), 20%); /* Black 2 */
+  --color--gray-45: hsl(var(--color--gray-hue), var(--color--gray-saturation), 44%); /* Gray Dark */
+  --color--gray-60: hsl(var(--color--gray-hue), var(--color--gray-saturation), 57%); /* Gray medium */
+  --color--gray-65: hsl(var(--color--gray-hue), var(--color--gray-saturation), 63%); /* Black 4 */
+  --color--gray-70: hsl(var(--color--gray-hue), var(--color--gray-saturation), 72%); /* Gray medium 2 */
+  --color--gray-90: hsl(var(--color--gray-hue), var(--color--gray-saturation), 88%); /* Gray light */
+  --color--gray-95: hsl(var(--color--gray-hue), var(--color--gray-saturation), 93%); /* Gray light 1 */
+  --color--gray-100: hsl(var(--color--gray-hue), var(--color--gray-saturation), 97%); /* Gray light 2 */
+
+  /**
+   * Named Colors.
+   */
+  --color--black: #000; /* Black */
+  --color--white: #fff; /* White */
+  --color--red: #e33f1e; /* Red */
+  --color--gold: #fdca40; /* Gold */
+  --color--green: #3fa21c; /* Green */
+  --color--light-blue: #c7e2fc;
+  --color--light-green: #cbf1c5;
+  --color--light-red: #ffa3a3;
+
+}

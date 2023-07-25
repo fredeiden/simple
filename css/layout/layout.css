@@ -1,0 +1,114 @@
+.layout-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+}
+.region-header {
+    padding: 1em 0 0;
+}
+.region-primary-menu {
+    margin: 0.5em 0 1em;
+}
+.region-primary-menu, .region-footer {
+    background: var(--color--black);
+    padding: 8px 0;
+}
+.page-title, .block-unplayed-games-block {
+    text-align: center;
+}
+.page-node-type-player .layout__region--first {
+    text-align: right;
+}
+.page-node-type-player .layout__region--first .field--name-field-picture {
+    margin: 4em 3em 0 0;
+}
+.decathlon-contest-form .item-list, .decathlon-contest-form .form-item {
+    text-align: center;
+}
+.decathlon-contest-form ul {
+    list-style-type: none;
+}
+.decathlon-contest-form .item-list li {
+    margin-left: 0;
+    font-size: 120%;
+}
+.config-container {
+    text-align: center;
+}
+.config-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+.config-container .config-block {
+    margin: 2rem 0 3rem;
+}
+.config-container .config-name {
+    font-family: Copperplate Gothic Light;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.config-grid ul {
+    list-style-type: none;
+}
+.config-grid li {
+    text-align: center;
+}
+.config-grid .config-item {
+    background: var(--color--gray-100);
+    width: 300px;
+    height: auto;
+    margin: 5px auto;
+    padding: 10px 80px;
+    font-size: 80%;
+}
+.manage-list, .dpi-form {
+    text-align: center;
+    padding: 1rem 0;
+    background: var(--color--gray-95);
+}
+.manage-list .list-grid {
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+}
+#decathlon-players-form, .dpi-form, .view-manage-events {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    background: var(--color--gray-95);
+}
+.dpi-form .form-item {
+    margin: 0;
+}
+.dpi-form .details-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.dpi-form .form-grid-item {
+    width: 100px;
+    height: 120px;
+    text-align: center;
+    position: relative;
+}
+.dpi-form .form-grid-item .number-custom {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}
+.dpi-form .form-grid-item .form-item__label {
+    margin: 0;
+    font-size: 90%;
+    line-height: 1rem;
+}
+#decathlon-players-form .form-checkboxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1500px;
+    padding: 1rem;
+}
+#decathlon-players-form .form-item {
+    margin: 0;
+}

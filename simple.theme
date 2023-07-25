@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+function simple_preprocess_page(&$variables){
+  //if ($variables['is_front'] == TRUE) {
+    $variables['#attached']['library'][] = 'simple/playermenu';
+    //}
+}
+
+/**
+ * Implements hook_preprocess_image_widget().
+ */
+function simple_preprocess_image_widget(array &$variables) {
+  $data = &$variables['data'];
+
+  // This prevents image widget templates from rendering preview container HTML
+  // to users that do not have permission to access these previews.
+  // @todo revisit in https://drupal.org/node/953034
+  // @todo revisit in https://drupal.org/node/3114318
+  if (isset($data['preview']['#access']) && $data['preview']['#access'] === FALSE) {
+    unset($data['preview']);
+  }
+}
+
+/**
+ * Preprocess views-view-table.tpl.php.
+ *
+ * Add odd and even class for striping
+ * @see template_preprocess_views_view_table().
+ */
+function simple_preprocess_views_view_table(&$vars) {
+
+  $stripe = ['odd', 'even'];
+  $i = 2;
+
+  $rows = $vars['rows'];
+  foreach ($rows as $id => $row){
+      $vars['rows'][$id]['attributes']->addClass($stripe[$i%2]);
+      $i += 1;
+  }
+}
+
+/**
+ * Implement themename_preprocess_template
+ */
+function simple_preprocess_block__system_branding_block(&$vars) {
+  $vars['event'] = \Drupal::service('decathlon.event')->getName();
+}

@@ -1,0 +1,48 @@
+/**
+ * @file
+ * Visual styles for menu.
+ */
+
+ul.menu {
+  list-style: none outside;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+ul.menu li {
+    display: inline;
+    margin: 0 0.5em;
+}
+.menu-item {
+  margin: 0;
+  padding-top: 0.2em;
+}
+ul.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul.menu a.is-active, .view-menu a.is-active {
+    font-weight: 600;
+}
+.region-primary-menu a, .menu--account a {
+    color: var(--color--white);
+}
+.menu--manage li {
+    font-size: 90%;
+    padding: 10px;
+}
+.menu--manage .menu-item--active-trail {
+    background: var(--color--gray-95);
+}
+.view-menu {
+    text-align: center;
+    text-transform: uppercase;
+}
+.view-menu ul li {
+    display: inline-block;
+    padding: 0.3em 1em;
+    background: var(--color--gray-90);
+}
+.view-menu li.menu-item--active-trail {
+    background: var(--color--white);
+}

@@ -1,0 +1,136 @@
+/**
+ * @file
+ * Visual styles for tables.
+ */
+
+table caption {
+  letter-spacing: 0.02em;
+  line-height: var(--sp);
+  font-family: var(--font-sans);
+  font-weight: bold;
+}
+table th {
+    font-weight: 500;
+}
+tr.recognize-placing, .attack {
+    background: var(--color--light-green) !important;
+}
+tr.ignore-placing {
+    background: var(--color--gray-95) !important;
+}
+tr.not-qualified, .defend {
+    background: var(--color--light-red) !important;
+}
+.play-marker {
+    margin-right: 0.5rem;
+    background: var(--color--light-blue);
+    color: var(--color--light-blue);
+}
+td.emphasize {
+    background: var(--color--light-blue);
+}
+.defend-marker {
+    margin-right: 0.5rem;
+    color: var(--color--light-red);
+    background: var(--color--light-red);
+}
+.attack-marker {
+    margin-right: 0.5rem;
+    color: var(--color--light-green);
+    background: var(--color--light-green);
+}
+.ignore-marker {
+    margin-right: 0.5rem;
+    color: var(--color--gray-95);
+    background: var(--color--gray-95);
+}
+tr.odd {
+    background: var(--color--gray-95);
+}
+tr.even {
+    background: var(--color--gray-100);
+}
+table td {
+    padding: 0.2rem 1rem;
+}
+table tfoot {
+    font-size: var(--font-size-xxs);
+    font-style: italic;
+    font-weight: normal;
+    border-bottom: 1px solid var(--color-gray-200);
+    line-height: 95%;
+}
+.highlight-cell {
+    font-weight: 600;
+}
+.podium-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.podium-grid table {
+    margin: 0 2em;
+}
+.podium-grid td {
+    width: 15%;
+}
+.podium-grid td.player {
+    width: 70%;
+}
+.podium-grid td.total {
+    text-align: center;
+}
+.stats-table .views-table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+.stats-table .views-table td {
+    border-bottom: 0px;
+}
+.results-table {
+    width: 50%;
+    margin: 0 auto 2em;
+}
+.results-table table caption {
+    text-align: center;
+}
+.scorecard table {
+    width: 80%;
+}
+.scorecard table th {
+    font-size: 80%;
+    text-transform: uppercase;
+}
+.scorecard table td {
+    font-size: 100%;
+}
+.scorecard .data {
+    width: 10%;
+    text-align: center;
+}
+.use-page table {
+    width: 50%;
+    margin: 0 auto;
+}
+.use-page table td {
+    text-align: center;
+}
+table tr.pad {
+    visibility: hidden;
+}
+.rotate-table {
+    margin-top: 4em;
+}
+.rotate-table .data {
+    width: 10%;
+    text-align: center;
+}
+.rotate {
+    width: 10%;
+    text-align: left;
+    transform-origin: 25px -5px;
+    transform: rotate(-70deg);
+}
+.manage-table table {
+    width: 80%;
+    margin: 0 auto;
+}
