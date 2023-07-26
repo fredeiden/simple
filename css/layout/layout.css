@@ -19,12 +19,6 @@ footer {
 .page-title, .block-unplayed-games-block {
     text-align: center;
 }
-.page-node-type-player .layout__region--first {
-    text-align: right;
-}
-.page-node-type-player .layout__region--first .field--name-field-picture {
-    margin: 4em 3em 0 0;
-}
 .decathlon-contest-form .item-list, .decathlon-contest-form .form-item {
     text-align: center;
 }
@@ -62,6 +56,12 @@ footer {
     margin: 5px auto;
     padding: 10px 80px;
     font-size: 80%;
+}
+@media (max-width: 1080px) {
+    .config-grid .config-item {
+	width: 90%;
+	padding: 10px 0;
+    }
 }
 .manage-list, .dpi-form {
     text-align: center;
@@ -104,11 +104,28 @@ footer {
 }
 #decathlon-players-form .form-checkboxes {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 1500px;
-    padding: 1rem;
 }
 #decathlon-players-form .form-item {
+    flex: 30%;
     margin: 0;
+    padding: 2px 0 2px 5px;
+}
+@media (max-width: 670px) {
+    #decathlon-players-form, .dpi-form, .view-manage-events {
+	width: 98%;
+    }
+    #decathlon-players-form .form-item {
+	flex: 48%;
+    }
+    .dpi-form .details-wrapper {
+	grid-template-columns: repeat(3, 1fr);
+    }
+}
+#user-login-form {
+    width: 95%;
+    margin: 0 auto;
+}
+#user-login-form input {
+    width: 95%;
 }

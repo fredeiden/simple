@@ -8,6 +8,9 @@ h1 {
 ul {
     padding: 0;
 }
+.form-text {
+    width: 95%;
+}
 .footnote {
     font-size: 80%;
     margin: 1em 0 1em 3em;
@@ -21,4 +24,10 @@ ul {
 .center-list .item-list ul {
     display: inline-block;
     text-align: left;
+}
+@media (max-width: 1080px) {
+    h1 {
+	font-size: 1.3em;
+	margin: 0.3em 0;
+    }
 }

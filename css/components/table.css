@@ -93,44 +93,105 @@ table tfoot {
 .results-table table caption {
     text-align: center;
 }
-.scorecard table {
-    width: 80%;
+.wide-table {
+    overflow-x: auto;
 }
-.scorecard table th {
+.wide-table table {
+    width: 60%;
+    margin: 0 auto 0;
+}
+.wide-table td {
+    text-align: center;
+}
+.scorecard .footnote {
+    width: 55%;
+    margin: 1em auto;
+}
+th.rotate {
     font-size: 80%;
     text-transform: uppercase;
 }
-.scorecard table td {
-    font-size: 100%;
-}
 .scorecard .data {
-    width: 10%;
-    text-align: center;
+    width: 15%;
+}
+.honors-table .data {
+    width: 11%;
+}
+.honors-table {
+    margin-bottom: 1em;
 }
 .use-page table {
     width: 50%;
     margin: 0 auto;
 }
-.use-page table td {
+.center-table table td {
     text-align: center;
 }
 table tr.pad {
     visibility: hidden;
 }
-.rotate-table {
-    margin-top: 4em;
-}
-.rotate-table .data {
-    width: 10%;
-    text-align: center;
-}
-.rotate {
-    width: 10%;
-    text-align: left;
-    transform-origin: 25px -5px;
-    transform: rotate(-70deg);
-}
 .manage-table table {
     width: 80%;
     margin: 0 auto;
+}
+@media (max-width: 1080px) {
+    .podium-grid {
+	grid-template-columns: repeat(1, 1fr);
+    }
+    .podium-grid table {
+	margin: 0 5px 1em;
+    }
+    .wide-table table, .use-page table {
+	width: 98%;
+    }
+    .scorecard .footnote {
+	width: 90%;
+    }
+    .wide-table td {
+	padding-left: 0;
+	padding-right: 0;
+    }
+}
+@media (max-width: 700px) {
+    table {
+	font-size: 80%;
+    }
+    .scorecard table {
+ 	margin-top: 2em;
+    }
+    .honors-table table {
+ 	margin-top: 6em;
+    }
+    table.rotate-table th.first, table.rotate-table td.first {
+	overflow: hidden;
+    }
+    table.rotate-table th.rotate, table.rotate-table td.data {
+	max-width: 20px;
+	overflow: visible;
+    }
+    th.rotate {
+	text-align: left;
+	transform-origin: 24px -22px;
+	transform: rotate(-70deg);
+	white-space: nowrap;
+	font-size: 70%;
+    }
+    .rotate-table td.first {
+	font-size: 70%;
+    }
+}
+@media (max-width: 575px) {
+    .scorecard table td {
+	padding: 0;
+    }
+}
+@media (max-width: 550px) {
+    th.rotate {
+	transform-origin: 16px -10px;
+    }
+}
+@media (max-width: 400px) {
+    th.rotate {
+	transform-origin: 13px -6px;
+    }
 }

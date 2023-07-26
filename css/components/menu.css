@@ -41,8 +41,30 @@ ul.menu a.is-active, .view-menu a.is-active {
 .view-menu ul li {
     display: inline-block;
     padding: 0.3em 1em;
-    background: var(--color--gray-90);
 }
 .view-menu li.menu-item--active-trail {
-    background: var(--color--white);
+}
+.block-superfishmain {
+    text-align: center;
+}
+ul.sf-menu.sf-style-black {
+    float: none;
+    display: inline-block;
+    margin: 0;
+}
+div.sf-accordion-toggle.sf-style-black a {
+    font-weight: initial;
+}
+
+@media (max-width: 670px) {
+    .view-menu ul li {
+	font-size: 90%;
+	padding: 0.3em 0.5em;
+    }
+}
+@media (max-width: 767px) {
+    div.sf-accordion-toggle.sf-style-black a {
+	padding-top: 0;
+	padding-bottom: 0;
+    }
 }

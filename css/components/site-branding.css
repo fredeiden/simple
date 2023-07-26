@@ -12,8 +12,6 @@
 .site-branding__logo-left {
     text-align: right;
 }
-.site-branding__logo-right {
-}
 .site-branding__text {
     text-align: center;
 }
@@ -25,8 +23,17 @@
 .site-branding .event {
     font-size: 250%;
 }
-@media (max-width: 480px) {
-    .site-branding__logo {
+@media (max-width: 1080px) {
+    .site-branding__logo-left a, .site-branding__logo-right a {
 	display: none;
+    }
+    .site-branding ul {
+	margin: 0;
+    }
+    .site-branding .name {
+	font-size: 100%;
+    }
+    .site-branding .event {
+	font-size: 150%;
     }
 }
