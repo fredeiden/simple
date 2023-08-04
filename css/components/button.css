@@ -25,6 +25,7 @@
 }
 .button, .button a {
     color: #ffffff;
+    text-align: center;
 }
 .button:hover,
 .button:focus {

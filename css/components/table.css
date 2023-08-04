@@ -12,19 +12,31 @@ table caption {
 table th {
     font-weight: 500;
 }
-tr.recognize-placing, .attack {
+.recognize-placing, .attack {
     background: var(--color--light-green) !important;
 }
-tr.ignore-placing {
+.ignore-placing {
     background: var(--color--gray-95) !important;
 }
-tr.not-qualified, .defend {
+.not-qualified, .defend {
     background: var(--color--light-red) !important;
+}
+.ignore-placing, .not-qualified {
+    text-align: center;
+    font-size: 80%;
 }
 .play-marker {
     margin-right: 0.5rem;
     background: var(--color--light-blue);
     color: var(--color--light-blue);
+}
+td.image {
+
+}
+td.image img {
+    display: block;
+
+    margin: auto;
 }
 td.emphasize {
     background: var(--color--light-blue);
@@ -76,7 +88,7 @@ table tfoot {
 .podium-grid td.player {
     width: 70%;
 }
-.podium-grid td.total {
+td.total {
     text-align: center;
 }
 .stats-table .views-table {
@@ -100,7 +112,11 @@ table tfoot {
     width: 60%;
     margin: 0 auto 0;
 }
-.wide-table td {
+.wide-table td.first {
+    text-align: left;
+    padding-left: 5px;
+}
+.wide-table td.data {
     text-align: center;
 }
 .scorecard .footnote {
@@ -117,12 +133,18 @@ th.rotate {
 .honors-table .data {
     width: 11%;
 }
-.honors-table {
+.bonuses-table {
+    margin-top: 1em;
+}
+.bonuses-table .data {
+    width: 15%;
+}
+.honors-table, .bonuses-table {
     margin-bottom: 1em;
 }
 .use-page table {
     width: 50%;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 .center-table table td {
     text-align: center;
@@ -158,6 +180,9 @@ table tr.pad {
     }
     .scorecard table {
  	margin-top: 2em;
+    }
+    .bonuses-table table {
+ 	margin-top: 3em;
     }
     .honors-table table {
  	margin-top: 6em;
