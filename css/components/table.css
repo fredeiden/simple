@@ -105,11 +105,15 @@ td.total {
 .results-table table caption {
     text-align: center;
 }
-.wide-table {
+.wide-table, .semi-wide-table {
     overflow-x: auto;
 }
 .wide-table table {
     width: 98%;
+    margin: 1em auto;
+}
+.semiwide-table table {
+    width: 80%;
     margin: 1em auto;
 }
 .wide-table table.rotate-table caption {
@@ -134,7 +138,7 @@ td.total {
     padding-left: 5px;
     font-size: 90%;
 }
-.wide-table td.data {
+.wide-table td.data, .semiwide-table td.data {
     text-align: center;
 }
 .scorecard .footnote {
@@ -181,7 +185,7 @@ table tr.pad {
     .podium-grid table {
 	margin: 0 5px 1em;
     }
-    .wide-table table, .use-page table {
+    .wide-table table, .semiwide-table table, .use-page table {
 	width: 98%;
     }
     .scorecard .footnote {
