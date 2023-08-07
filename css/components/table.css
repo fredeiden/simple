@@ -109,12 +109,30 @@ td.total {
     overflow-x: auto;
 }
 .wide-table table {
-    width: 60%;
-    margin: 0 auto 0;
+    width: 98%;
+    margin: 1em auto;
+}
+.wide-table table.rotate-table {
+    margin-top: 7em;
+}
+.wide-table table.rotate-table td.first {
+    overflow: hidden;
+}
+.wide-table table.rotate-table th.rotate, .wide-table table.rotate-table td.data {
+    max-width: 20px;
+    overflow: visible;
+}
+.wide-table th.rotate {
+    text-align: left;
+    transform-origin: 14px -7px;
+    transform: rotate(-70deg);
+    white-space: nowrap;
+    font-size: 70%;
 }
 .wide-table td.first {
     text-align: left;
     padding-left: 5px;
+    font-size: 90%;
 }
 .wide-table td.data {
     text-align: center;
