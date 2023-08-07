@@ -112,8 +112,8 @@ td.total {
     width: 98%;
     margin: 1em auto;
 }
-.wide-table table.rotate-table {
-    margin-top: 7em;
+.wide-table table.rotate-table caption {
+    margin-bottom: 7em;
 }
 .wide-table table.rotate-table td.first {
     overflow: hidden;
