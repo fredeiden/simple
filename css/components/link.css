@@ -14,3 +14,7 @@ button.link {
 label button.link {
   font-weight: bold;
 }
+.small-link {
+    color: #0000EE;
+    font-size: 80%;
+}

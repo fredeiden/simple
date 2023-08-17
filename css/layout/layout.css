@@ -22,7 +22,7 @@ footer {
 .decathlon-contest-form .item-list, .decathlon-contest-form .form-item {
     text-align: center;
 }
-.decathlon-contest-form ul {
+.decathlon-contest-form ul, .decathlon-edit-contest-form ul {
     list-style-type: none;
 }
 .decathlon-contest-form .item-list li {
@@ -73,7 +73,7 @@ footer {
     margin: 0 auto;
     padding-top: 1.5rem;
 }
-#decathlon-players-form, .dpi-form, .view-manage-events {
+.decathlon-event-selector-form, #decathlon-players-form, .dpi-form, .view-manage-events {
     width: 80%;
     margin: 0 auto;
     border: none;

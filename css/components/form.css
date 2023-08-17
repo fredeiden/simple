@@ -91,7 +91,9 @@ abbr.ajax-changed {
 .form-item select.error {
   border: 2px solid red;
 }
-
+.form-item input.error + label {
+    color: red;
+}
 /* Inline error messages. */
 .form-item--error-message:before {
   display: inline-block;
@@ -101,4 +103,21 @@ abbr.ajax-changed {
   vertical-align: sub;
   background: url(../../images/icons/error.svg) no-repeat;
   background-size: contain;
+}
+
+.decathlon-scoring {
+    text-align: center;
+}
+.decathlon-scoring .form-item-title {
+    font-size: 1.5em;
+}
+.decathlon-scoring .form-number {
+    width: 50px;
+}
+.decathlon-scoring .form-radios .form-item {
+    display: inline-block;
+    margin: 1rem;
+}
+.decathlon-scoring .scoring-row, .decathlon-scoring .scoring-box {
+    margin: 2em auto;
 }
