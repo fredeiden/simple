@@ -142,7 +142,7 @@ td.total {
     text-align: center;
 }
 .scorecard .footnote {
-    width: 55%;
+    width: 80%;
     margin: 1em auto;
 }
 th.rotate {
@@ -189,11 +189,16 @@ table tr.pad {
 	width: 98%;
     }
     .scorecard .footnote {
-	width: 90%;
+	width: 98%;
+	margin: 0 auto;
+	font-size: 70%;
     }
     .wide-table td {
 	padding-left: 0;
 	padding-right: 0;
+    }
+    table tr.pad {
+	display: none;
     }
 }
 @media (max-width: 700px) {
