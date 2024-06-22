@@ -19,8 +19,16 @@ footer {
 .page-title, .block-unplayed-games-block {
     text-align: center;
 }
-.decathlon-contest-form .item-list, .decathlon-contest-form .form-item {
+.decathlon-contest-form .item-list, .decathlon-contest-form .form-item, .node-bonus-form {
     text-align: center;
+}
+.node-bonus-form label {
+    display: block;
+    margin: 10px 0;
+}
+.node-bonus-form .field--name-field-comment input {
+    height: 150px;
+    margin: 0 auto;
 }
 .decathlon-contest-form ul, .decathlon-edit-contest-form ul {
     list-style-type: none;
@@ -57,10 +65,17 @@ footer {
     padding: 10px 80px;
     font-size: 80%;
 }
+.config-grid .config-item-large {
+    padding: 50px 80px;
+    font-size: 150%;
+}
 @media (max-width: 1080px) {
     .config-grid .config-item {
 	width: 90%;
 	padding: 10px 0;
+    }
+    .config-grid .config-item-large {
+	padding: 50px 0;
     }
 }
 .manage-list, .dpi-form {
