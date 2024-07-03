@@ -149,8 +149,12 @@ th.rotate {
     font-size: 80%;
     text-transform: uppercase;
 }
+th.stack {
+    display: block;
+    word-wrap: break-word;
+}
 .scorecard .data {
-    width: 15%;
+    width: 8%;
 }
 .honors-table .data {
     width: 11%;

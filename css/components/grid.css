@@ -11,6 +11,13 @@
     margin: 0 auto 2em;
     text-align: center;
 }
+.view-event-games .view-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: 0 auto 2em;
+    text-align: center;
+}
 .image-with-caption img, .image-with-caption a {
     display: block;
     text-align: center;
@@ -19,6 +26,10 @@
 @media(max-width: 1300px) {
     .player-grid, .simple-grid .view-content {
 	grid-template-columns: repeat(8, 1fr);
+	width: 98%;
+    }
+    .view-event-games .view-content {
+	grid-template-columns: repeat(3, 1fr);
 	width: 98%;
     }
 }
@@ -30,5 +41,9 @@
 @media(max-width: 650px) {
     .player-grid, .simple-grid .view-content {
 	grid-template-columns: repeat(3, 1fr);
+    }
+    .view-event-games .view-content {
+	grid-template-columns: repeat(2, 1fr);
+	width: 98%;
     }
 }
