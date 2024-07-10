@@ -12,16 +12,43 @@ table caption {
 table th {
     font-weight: 500;
 }
-.recognize-placing, .attack {
+.attack {
     background: var(--color--light-green) !important;
 }
-.ignore-placing {
-    background: var(--color--gray-95) !important;
+table.combined {
+    border: 2px solid var(--color--gold);
+}
+table.combined caption, tr.combined, .combined-marker {
+    background: var(--color--gold) !important;
+}
+.combined-marker {
+    margin-right: 0.5rem;
+    color: var(--color--gold);
+}
+table.leisure {
+    border: 2px solid var(--color--light-blue);
+}
+table.leisure caption, tr.leisure, .leisure-marker {
+    background: var(--color--light-blue) !important;
+}
+.leisure-marker {
+    margin-right: 0.5rem;
+    color: var(--color--light-blue);
+}
+table.parlor {
+    border: 2px solid var(--color--light-purple);
+}
+table.parlor caption, tr.parlor, .parlor-marker {
+    background: var(--color--light-purple) !important;
+}
+.parlor-marker {
+    margin-right: 0.5rem;
+    color: var(--color--light-purple);
 }
 .not-qualified, .defend {
     background: var(--color--light-red) !important;
 }
-.ignore-placing, .not-qualified {
+.exception {
     text-align: center;
     font-size: 80%;
 }
@@ -81,6 +108,9 @@ table tfoot {
 }
 .podium-grid table {
     margin: 0 2em;
+}
+.podium-grid caption {
+    padding: 10px 0 5px;
 }
 .podium-grid td {
     width: 15%;

@@ -35,10 +35,11 @@
   --color--black: #000; /* Black */
   --color--white: #fff; /* White */
   --color--red: #e33f1e; /* Red */
-  --color--gold: #fdca40; /* Gold */
+  --color--gold: #fedc81; /* Gold */
   --color--green: #3fa21c; /* Green */
   --color--light-blue: #c7e2fc;
   --color--light-green: #cbf1c5;
   --color--light-red: #ffa3a3;
+  --color--light-purple: #e6ccff;
 
 }
