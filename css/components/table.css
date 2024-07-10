@@ -18,7 +18,7 @@ table th {
 table.combined {
     border: 2px solid var(--color--gold);
 }
-table.combined caption, tr.combined, .combined-marker {
+table.combined caption, .combined, .combined-marker {
     background: var(--color--gold) !important;
 }
 .combined-marker {
@@ -28,7 +28,7 @@ table.combined caption, tr.combined, .combined-marker {
 table.leisure {
     border: 2px solid var(--color--light-blue);
 }
-table.leisure caption, tr.leisure, .leisure-marker {
+table.leisure caption, .leisure, .leisure-marker {
     background: var(--color--light-blue) !important;
 }
 .leisure-marker {
@@ -38,7 +38,7 @@ table.leisure caption, tr.leisure, .leisure-marker {
 table.parlor {
     border: 2px solid var(--color--light-purple);
 }
-table.parlor caption, tr.parlor, .parlor-marker {
+table.parlor caption, .parlor, .parlor-marker {
     background: var(--color--light-purple) !important;
 }
 .parlor-marker {
