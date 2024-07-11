@@ -13,13 +13,13 @@ table th {
     font-weight: 500;
 }
 .attack {
-    background: var(--color--light-green) !important;
+    background: var(--color--light-green);
 }
 table.combined {
     border: 2px solid var(--color--gold);
 }
 table.combined caption, .combined, .combined-marker {
-    background: var(--color--gold) !important;
+    background: var(--color--gold);
 }
 .combined-marker {
     margin-right: 0.5rem;
@@ -29,7 +29,7 @@ table.leisure {
     border: 2px solid var(--color--light-blue);
 }
 table.leisure caption, .leisure, .leisure-marker {
-    background: var(--color--light-blue) !important;
+    background: var(--color--light-blue);
 }
 .leisure-marker {
     margin-right: 0.5rem;
@@ -39,14 +39,14 @@ table.parlor {
     border: 2px solid var(--color--light-purple);
 }
 table.parlor caption, .parlor, .parlor-marker {
-    background: var(--color--light-purple) !important;
+    background: var(--color--light-purple);
 }
 .parlor-marker {
     margin-right: 0.5rem;
     color: var(--color--light-purple);
 }
 .not-qualified, .defend {
-    background: var(--color--light-red) !important;
+    background: var(--color--light-red);
 }
 .exception {
     text-align: center;
@@ -83,10 +83,10 @@ td.emphasize {
     color: var(--color--gray-95);
     background: var(--color--gray-95);
 }
-tr.odd {
+.stats-table tr.odd {
     background: var(--color--gray-95);
 }
-tr.even {
+.stats-table tr.even {
     background: var(--color--gray-100);
 }
 table td {
@@ -108,6 +108,7 @@ table tfoot {
 }
 .podium-grid table {
     margin: 0 2em;
+    border-collapse: collapse;
 }
 .podium-grid caption {
     padding: 10px 0 5px;
