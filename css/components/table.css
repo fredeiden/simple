@@ -16,30 +16,39 @@ table th {
     background: var(--color--light-green);
 }
 table.combined {
-    border: 2px solid var(--color--gold);
+    border: 10px solid var(--color--gold);
 }
 table.combined caption, .combined, .combined-marker {
     background: var(--color--gold);
+}
+table.combined td {
+    border-bottom: 1px solid var(--color--gold)
 }
 .combined-marker {
     margin-right: 0.5rem;
     color: var(--color--gold);
 }
 table.leisure {
-    border: 2px solid var(--color--light-blue);
+    border: 10px solid var(--color--light-blue);
 }
 table.leisure caption, .leisure, .leisure-marker {
     background: var(--color--light-blue);
+}
+table.leisure td {
+    border-bottom: 1px solid var(--color--light-blue)
 }
 .leisure-marker {
     margin-right: 0.5rem;
     color: var(--color--light-blue);
 }
 table.parlor {
-    border: 2px solid var(--color--light-purple);
+    border: 10px solid var(--color--light-purple);
 }
 table.parlor caption, .parlor, .parlor-marker {
     background: var(--color--light-purple);
+}
+table.parlor td {
+    border-bottom: 1px solid var(--color--light-purple)
 }
 .parlor-marker {
     margin-right: 0.5rem;
