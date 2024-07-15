@@ -146,7 +146,7 @@ footer {
 }
 .pie-chart {
     width: 80%;
-    margin: 0 auto;
+    margin: 1em auto;
     background: var(--color--gray-95);
 }
 .pie-chart table {
