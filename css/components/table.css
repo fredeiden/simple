@@ -145,7 +145,7 @@ td.total {
 .results-table table caption {
     text-align: center;
 }
-.wide-table, .semi-wide-table {
+.wide-table, .semiwide-table {
     overflow-x: auto;
 }
 .wide-table table {

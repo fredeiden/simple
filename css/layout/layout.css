@@ -144,3 +144,19 @@ footer {
 #user-login-form input {
     width: 95%;
 }
+.pie-chart {
+    width: 80%;
+    margin: 0 auto;
+    background: var(--color--gray-95);
+}
+.pie-chart table {
+    margin: 0 auto;
+    padding: 1em 0 0;
+}
+.pie-chart table caption {
+    padding: 1em 0 0;
+}
+.pie-chart table td {
+    width: 15%;
+    text-align: center;
+}
