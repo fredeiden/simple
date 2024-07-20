@@ -131,6 +131,20 @@ table tfoot {
 td.total {
     text-align: center;
 }
+.marker-table {
+    margin: 0 auto;
+}
+.marker-table td {
+    width: 50px;
+}
+.marker-table td.marker {
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 150%;
+}
+td.table-y-axis {
+    text-align: right;
+}
 .stats-table .views-table {
     border-collapse: separate;
     border-spacing: 2px;
