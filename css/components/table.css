@@ -134,6 +134,11 @@ td.total {
 .marker-table {
     margin: 0 auto;
 }
+.marker-table th {
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
 .marker-table td {
     width: 50px;
 }
