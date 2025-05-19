@@ -35,3 +35,21 @@ ul {
 	margin: 0 auto;
     }
 }
+.comment {
+    width: 75%;
+    margin: 1em auto;
+}
+.comment ul {
+    list-style-type: none;
+    font-size: var(--font-size-xxs);
+    font-style: italic;
+}
+#block-simple-easteregg {
+    text-align: center;
+}
+#block-simple-cogitoergodecathlon {
+    margin: 0 2em;
+}
+#block-simple-cogitoergodecathlon ul {
+    padding: 0 0 0 2em;
+}

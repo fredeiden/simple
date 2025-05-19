@@ -6,7 +6,6 @@
 table caption {
   letter-spacing: 0.02em;
   line-height: var(--sp);
-  font-family: var(--font-sans);
   font-weight: bold;
 }
 table th {
@@ -15,10 +14,13 @@ table th {
 .attack {
     background: var(--color--light-green);
 }
+tr.ignore-placing {
+    opacity: 0.5;
+}
 table.combined {
     border: 10px solid var(--color--gold);
 }
-table.combined caption, .combined, .combined-marker {
+table.combined, tr.combined.recognize-placing {
     background: var(--color--gold);
 }
 table.combined td {
@@ -27,11 +29,12 @@ table.combined td {
 .combined-marker {
     margin-right: 0.5rem;
     color: var(--color--gold);
+    background: var(--color--gold);
 }
 table.leisure {
     border: 10px solid var(--color--light-blue);
 }
-table.leisure caption, .leisure, .leisure-marker {
+table.leisure, tr.leisure.recognize-placing {
     background: var(--color--light-blue);
 }
 table.leisure td {
@@ -40,11 +43,12 @@ table.leisure td {
 .leisure-marker {
     margin-right: 0.5rem;
     color: var(--color--light-blue);
+    background: var(--color--light-blue);
 }
 table.parlor {
     border: 10px solid var(--color--light-purple);
 }
-table.parlor caption, .parlor, .parlor-marker {
+table.parlor, tr.parlor.recognize-placing {
     background: var(--color--light-purple);
 }
 table.parlor td {
@@ -53,6 +57,7 @@ table.parlor td {
 .parlor-marker {
     margin-right: 0.5rem;
     color: var(--color--light-purple);
+    background: var(--color--light-purple);
 }
 .not-qualified, .defend {
     background: var(--color--light-red);
@@ -121,6 +126,7 @@ table tfoot {
 }
 .podium-grid caption {
     padding: 10px 0 5px;
+    font-size: 120%;
 }
 .podium-grid td {
     width: 15%;
