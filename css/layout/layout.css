@@ -78,7 +78,7 @@ footer {
 	padding: 50px 0;
     }
 }
-.manage-list, .dpi-form {
+.manage-list {
     text-align: center;
     padding: 1rem 0;
     background: var(--color--gray-95);
@@ -94,28 +94,13 @@ footer {
     border: none;
     background: var(--color--gray-95);
 }
-.dpi-form .form-item {
-    margin: 0;
+.dpi-form .form-type-number {
+    margin: 1em 0;
+    width: 200px;
 }
-.dpi-form .details-wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-.dpi-form .form-grid-item {
-    width: 100px;
-    height: 120px;
+.dpi-form .form-type-number input {
     text-align: center;
-    position: relative;
-}
-.dpi-form .form-grid-item .number-custom {
-    position: absolute;
-    bottom: 0;
-    margin: 0 auto;
-}
-.dpi-form .form-grid-item .form-item__label {
-    margin: 0;
-    font-size: 90%;
-    line-height: 1rem;
+    float: right;
 }
 #decathlon-players-form .form-checkboxes {
     display: flex;

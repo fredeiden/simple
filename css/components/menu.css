@@ -27,11 +27,11 @@ ul.menu a.is-active, .view-menu a.is-active {
 .region-primary-menu a, .menu--account a {
     color: var(--color--white);
 }
-.menu--manage li {
+.menu--manage li a {
     font-size: 90%;
     padding: 10px;
 }
-.menu--manage .menu-item--active-trail {
+.menu--manage .menu-item--active-trail, .menu--manage .is-active {
     background: var(--color--gray-95);
 }
 .view-menu {
